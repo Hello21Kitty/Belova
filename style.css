@@ -1,0 +1,36 @@
+:root {
+    --main-color: #00CC00;
+    --secondary-color: #FF7400;
+    --accent-color: #CD0074;
+}
+
+* {
+    margin: 0;
+    padding: 50;
+}
+
+header {
+    height: 110px;
+    background-color: var(--main-color);
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+}
+
+li {
+    width: 100%;
+}
+
+main {
+    border: 1px solid green;
+}
+
+.banner_img {
+    margin: 35px;
+}
+
+footer {
+    border: 1px solid yellow;
+}
