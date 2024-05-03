@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Bree Serif';
+    src: url("fonts/BreeSerif-Regular.ttf");
+}
+
 :root {
     --main-color: #00CC00;
     --secondary-color: #FF7400;
@@ -5,39 +10,56 @@
 }
 
 * {
+    font-family: 'Bree Serif', serif;
     margin: 0;
     padding: 50;
+    border: 0;
+}
+
+a {
+    text-decoration: none;
 }
 
 ul {
     list-style: none;
 }
 
-header {
-    height: 110px;
-    background-color: var(--main-color);
-}
-
-nav ul {
-    display: flex;
-    flex-direction: row;
-}
-
 li {
     width: 100%;
 }
 
-main {
-    border: 1px solid green;
+header {
+    height: 200px;
+    background-color: var(--main-color);
 }
 
-.banner_img {
-    margin: 35px;
+.logo {
+    display: block;
+    border-radius: 70px;
+    width: 286px;
+    height: 94px;
+    background-color: var(--secondary-color);
+    
+    text-align: center;
+}
+
+.logo h1 {
+    color: black;
+}
+
+
+main {
+
 }
 
 .big_banner {
     max-width: 1133px;
     height: 219px;
+    margin: 0 auto;
+}
+
+.banner_img {
+    margin: 35px;
 }
 
 .card {
