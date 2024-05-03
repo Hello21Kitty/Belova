@@ -3,10 +3,19 @@
     src: url("fonts/BreeSerif-Regular.ttf");
 }
 
+@font-face {
+    font-family: 'Anek Bangla';
+    src: url("fonts/AnekBangla-VariableFont_wdth\,wght.ttf");
+}
+
 :root {
     --main-color: #00CC00;
     --secondary-color: #FF7400;
     --accent-color: #CD0074;
+}
+
+html,body {
+    height: 100%;
 }
 
 * {
@@ -16,31 +25,44 @@
     border: 0;
 }
 
-a {
+a,ul {
     text-decoration: none;
-}
-
-ul {
     list-style: none;
 }
 
-li {
-    width: 100%;
+button {
+    background-color: transparent;
 }
 
 header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
     height: 200px;
     background-color: var(--main-color);
 }
 
+header a {
+    font-weight: 400;
+    color: white;
+    font-size: 32px;
+    line-height: 43px;
+}
+
+ul.menu {
+    display: flex;
+    flex-direction: row;
+}
+
 .logo {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 70px;
     width: 286px;
     height: 94px;
     background-color: var(--secondary-color);
-    
-    text-align: center;
 }
 
 .logo h1 {
@@ -49,24 +71,33 @@ header {
 
 
 main {
-
-}
-
-.big_banner {
-    max-width: 1133px;
-    height: 219px;
+    width: 90%;
+    padding: 20px;
     margin: 0 auto;
 }
 
+.big_banner {
+    display: block;
+    margin: 0 auto 20px auto;
+}
+
 .banner_img {
-    margin: 35px;
+
+}
+
+.cards_list {
+    padding-bottom: 20px;
 }
 
 .card {
-    padding: 10px;
-    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 20px;
     width: 470px;
-    height: 695px;
+    height: 700px;
+    border-radius: 50px;
+    border: 5px solid rgba(0, 250, 0, 0.5);
 }
 
 .card ul {
@@ -78,8 +109,74 @@ main {
     height: 500px;
 }
 
-.card_price {}
+.card_price {
+    font-family: 'Inter', serif;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 38.73px;
+    text-align: left;    
+    color: var(--main-color);
+}
+
+.card_rev ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: flex-end;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.card_rev li {
+    padding-right: 10px;
+}
+
+.rev_img {
+    width: 40px;
+    height: 40px;
+}
+
+.plant_name {
+    font-family: 'Anek Bangla',serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 45px;
+    padding-bottom: 10px;
+}
+
+.card_buttons .buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.card_buttons li {
+    border-radius: 30px;
+}
+
+.card_buttons button {
+    width: 220px;
+    height: 55px;
+    font-family: 'Inter';
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: center;
+    
+    
+}
+
+.orange {
+    background-color: var(--secondary-color);
+}
+
+.purple {
+    background-color: var(--accent-color);
+}
 
 footer {
-    border: 1px solid yellow;
+    margin-top: 30px;
+    height: 200px;
+    background-color: var(--main-color);
 }
